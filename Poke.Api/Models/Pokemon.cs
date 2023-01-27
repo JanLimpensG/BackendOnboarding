@@ -11,4 +11,12 @@ public class Pokemon
     public string Name { get; set; }
     public int Weight { get; set; }
     public int Height { get; set; }
+    
+    //Many to many relationship with Move
+    public virtual ICollection<Move> Moves { get; set; }
+
+    public Pokemon()
+    {
+        this.Moves = new HashSet<Move>();
+    }
 }
