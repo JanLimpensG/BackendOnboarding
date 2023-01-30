@@ -1,8 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b92d1d7b_002D0817_002D4425_002Daac4_002Dbd99d55f974d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetRandomPokemonReturnsPokemon" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::6E2F394B-87E5-446B-848C-2F30DC2E031C::net6.0::Poke.UnitTests.PokemonUnitTest.GetRandomPokemonReturnsPokemon&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::6E2F394B-87E5-446B-848C-2F30DC2E031C::net6.0::Poke.UnitTests.PokemonUnitTest.GetPokemonFromId&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::6E2F394B-87E5-446B-848C-2F30DC2E031C::net6.0::Poke.UnitTests.PokemonUnitTest.GetPokemonFromDatabase&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::6E2F394B-87E5-446B-848C-2F30DC2E031C::net6.0::Poke.UnitTests.PokemonUnitTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
