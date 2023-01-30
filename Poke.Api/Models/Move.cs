@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace Poke.Api.Models;
 
 public class Move
@@ -6,6 +8,7 @@ public class Move
     public string Name { get; set; }
     
     //Many-to-many relation with pokemon
+    [JsonIgnore]
     public virtual ICollection<Pokemon> Pokemons { get; set; }
 
     public Move()

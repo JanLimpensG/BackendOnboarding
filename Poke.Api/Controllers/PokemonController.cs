@@ -62,4 +62,12 @@ public class PokemonController : ControllerBase
         var moves = _pokemonService.GetMoves(id);
         return moves;
     }
+
+    [HttpDelete]
+    [Route("{id}")]
+    public Pokemon DeletePokemon(int id)
+    {
+        var pokemon = _pokemonService.DeletePokemon(id);
+        return pokemon;
+    }
 }
