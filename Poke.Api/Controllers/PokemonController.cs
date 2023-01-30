@@ -23,12 +23,17 @@ public class PokemonController : ControllerBase
     /// Currently this method always returns ditto instead of a random pokemon, change it so it does
     /// Done!
     /// </Challenge>
+    
     [HttpGet("random")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
-    public Pokemon GetRandomPokemon()
+    public ActionResult<Pokemon> GetRandomPokemon()
     {
         var pokemon =_pokemonService.GetRandomPokemon();
+        if (pokemon == null)
+        {
+            return NotFound();
+        }
         return pokemon;
     }
 
@@ -49,7 +54,7 @@ public class PokemonController : ControllerBase
 
     [Authorize]
     [HttpGet("from-database/{id}")]
-    public Pokemon GetPokemonFromDabase(int id)
+    public Pokemon GetPokemonFromDatabase(int id)
     {
         var pokemon = _pokemonService.GetFomDatabase(id);
         return pokemon;

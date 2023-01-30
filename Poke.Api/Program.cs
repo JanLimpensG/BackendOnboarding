@@ -71,6 +71,9 @@ builder.Services.AddAuthentication(
 
 builder.Services.AddScoped<IPokemonService, PokemonService>();
 
+//Add HttpClient DI
+builder.Services.AddHttpClient<IPokemonService, PokemonService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
